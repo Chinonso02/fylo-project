@@ -1,0 +1,332 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+:root{
+    --Dark-Blue-intro-and-email-sign-up-background: hsl(217, 28%, 15%);
+    --Dark-Blue-main-background: hsl(218, 28%, 13%);
+    --Dark-Blue-footer-background: hsl(216, 53%, 9%);
+    --Dark-Blue-testimonials-background: hsl(219, 30%, 18%);
+    --Cyan-inside-call-to-action-gradient: hsl(176, 68%, 64%);
+    --Blue-inside-call-to-action-gradient: hsl(198, 60%, 50%);
+    --Light-Red-error: hsl(0, 100%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+}
+.fyloimg{
+    display: flex;
+    justify-content: space-between;
+    
+}
+#headsection{
+    background-color: var(--Dark-Blue-main-background);
+}
+.logo{
+    margin: 40px 50px;
+}
+.fyloimg img{
+    width: 50%;
+}
+.links{
+    margin: 40px 50px;
+    display: flex;
+    gap: 40px;
+}
+.illustrationimg img{
+    width: 40%;
+    margin-left: 400px;
+}
+.links a{
+    color: rgb(106, 119, 131);
+    font-size: 15px;
+}
+.imgex{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(245, 237, 237);
+    margin: auto;
+    width: 40%;
+}
+.imgex p{
+    padding: 30px 0px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.imgex h3{
+    padding-top: 50px;
+    font-size: 25px;
+}
+.startingbutton{
+    color: var(--White);
+    background-color: var(--Cyan-inside-call-to-action-gradient);
+    padding: 8px 30px;
+    border-radius: 40px;
+    font-size: medium;
+}
+
+.iconimg{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.iconimg div{
+    padding: 50px 30px;
+    color: var(--White);
+}
+.iconimg h3{
+    padding: 20px 0px;
+    font-size: 18px;
+}
+#iconimgsection{
+    background-color: var(--Dark-Blue-main-background);
+}
+.iconimg p{
+    font-size: 12px;
+}
+
+#imgside{
+    background-color: var(--Dark-Blue-main-background);
+}
+
+.imgsidegeneral{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    width: 80%;
+    margin: auto;
+    gap: 2rem;
+    padding: 30px 50px;
+    color: var(--White);
+}
+
+.ilimg img{
+    width: 100%;
+}
+.imgsidegeneral h2{
+    padding-bottom: 10px;
+}
+.imgsidegeneral p{
+    padding-bottom: 15px;
+    font-size: 12px;
+}
+.imgbody{
+    padding-left: 40px;
+}
+.imgbody a{
+    color: var(--White);
+     
+}
+.imgbody img{
+    padding-left: 5px;
+}
+.imgbody h2{
+    font-size: 30px;
+}
+#boxsection{
+    background-color: var(--Dark-Blue-main-background);
+    color: var(--White);
+    padding: 100px;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+}
+.box1{
+    width: 90%;
+    background-color: var(--Dark-Blue-testimonials-background);
+    padding: 2rem 1.7rem 1rem;
+    line-height: 22px;
+    position: relative;
+    z-index: 2;
+}
+.box1 p{
+    font-size: 14px;
+}
+.avatarandname{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 20px;
+}
+.avatarandname img{
+    width: 10%;
+    border-radius: 50%;
+}
+.quoteimg{
+    position: absolute;
+    z-index: 1;
+    top: -15%;
+    left: -1%;
+}
+
+#getearlyaccess{
+    background-color: var(--Dark-Blue-main-background);
+    position: relative;
+}
+
+.access{
+    box-shadow: 5px 5px 10px var(--Dark-Blue-testimonials-background);
+    /* margin-bottom: -9rem; */
+    /* position: absolute; */
+}
+
+.accesstoday{
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--Dark-Blue-intro-and-email-sign-up-background);
+    
+}
+#getearlyaccess h2{
+    font-size: 30px;
+    color: var(--White);
+    padding-top: 30px;
+}
+#getearlyaccess p{
+    color: var(--White);
+    /* padding-bottom: 500px; */
+}
+.mailsection{
+    display: flex;
+    width: 60%;
+    text-align: center;
+    place-content: center;
+    gap: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    background-color: var(--Dark-Blue-intro-and-email-sign-up-background);
+    padding-bottom: 15px;
+}
+.mailbox h6{
+    border-radius: 20px;
+}
+.mailbox p{
+    padding-top: 10px;
+    font-size: 8px;
+    color: var(--Light-Red-error) !important;
+}
+.accesstoday p{
+    font-size: 13px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 0px;
+}
+.mailsection{
+    color: var(--Light-Red-error);
+}
+#email{
+    border-radius: 25px;
+    width: 150%;
+    padding: 5px 0px;
+}
+.starting{
+    background-color: var(--Cyan-inside-call-to-action-gradient);
+    padding: 8px 20px 8px 20px;
+    border-radius: 25px;
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--White);
+}
+#lastfylo{
+    background-color: var(--Dark-Blue-footer-background);
+}
+.fylo{
+    padding-bottom: 40px;
+}
+.logofylo img{
+    width: 7%;
+    margin-top: 100px;
+    margin-left: 70px;
+    margin-bottom: 40px;
+}
+.svg{
+    display: flex;
+    color: var(--White);
+    place-items: center;
+    width: 85%;
+    margin-left: 70px;
+}
+.loremimg{
+    font-size: 11px;
+    width: 32%;
+    display: flex;
+    margin-left: 35px;
+}
+.loremimg img{
+    height: 10%;
+    padding-top: 2px;
+}
+.lorem{
+    margin-left: 20px;
+}
+.phone img{
+    width: 15%;
+}
+.phone{
+    font-size:9px ;
+    margin-left: 45px;
+}
+.number{
+    display: flex;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+.example{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 20px
+
+}
+.number p{
+    padding-left: 15px;
+}
+.example p{
+    padding-left: 15px;
+}
+.footerlist{
+    width: 40%;
+    display: flex;
+    gap: 40px;
+    padding-left: 80px;
+}
+.list1{
+    font-size: 12px;
+    color: var(--White);
+    line-height: 30px;
+    
+}
+.list2{
+    font-size: 12px;
+    color: var(--White);
+    line-height: 30px;
+    padding-left: 30px;
+}
+.svgicon{
+    display: flex;
+    gap: 20px;
+}
+.svgicon img{
+    border-radius: 50px;
+}
+@media screen and (max-width:768px) {
+    
+}
+.footerlist a{
+    color: var(--White);
+}
