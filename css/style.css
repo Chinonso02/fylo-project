@@ -18,25 +18,29 @@
     --Font-size: 14px;
 }
 
+html, body{
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 a{
     text-decoration: none;
 }
 .fyloimg{
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
+    padding: 18px 30px;
 }
 #headsection{
     background-color: var(--Dark-Blue-main-background);
 }
-.logo{
-    margin: 40px 50px;
-}
+
 .fyloimg img{
-    width: 50%;
+    width: 80%;
 }
 .links{
-    margin: 40px 50px;
     display: flex;
     gap: 40px;
 }
@@ -343,6 +347,12 @@ a{
 .footerlist a{
     color: var(--White);
 }
+
+.navToggle{
+    color: #fff;
+    display: none;
+}
+
 @media screen and (max-width:960px) {
     .iconimg{
         width: 80%;
@@ -398,7 +408,7 @@ a{
     .loremimg{
         font-size: 18px;
         padding-bottom: 25px;
-        width: 80%;
+        width: 80%; 
         margin-left: 50px;
         line-height: 30px;
     }
@@ -415,6 +425,36 @@ a{
         width: 50%;
         margin-left: -180px;
         display: grid;
-        
     }
+}
+
+/* Nav styling */
+
+@media screen and (max-width:375px) {
+    .navToggle{
+        display: block;
+    }
+
+    .ri-close-line{
+        display: none;
+    }
+
+    .links{
+        position: absolute;
+        top: -4%;
+        left: 50%;
+        background-color: #fff;
+        flex-direction: column;
+        width: 200px;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        box-shadow: 55px 55px 105px var(--Dark-Blue-footer-background);
+        transition: .5s;
+    }
+
+    .links a{
+        color: var(--Dark-Blue-main-background);
+    }
+    
 }
