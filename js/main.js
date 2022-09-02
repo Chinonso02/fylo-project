@@ -2,7 +2,7 @@ const navLinks = document.querySelector(".links")
 const navOpen = document.querySelector(".ri-menu-line")
 const navClose = document.querySelector(".ri-close-line")
 
-function opennav(){
+function openNav(){
     navLinks.style.top = "4%"
     navOpen.style.display = "none"
     navClose.style.display = "block"

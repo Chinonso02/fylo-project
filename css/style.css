@@ -110,9 +110,10 @@ a{
 }
 
 .imgsidegeneral{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
     place-items: center;
+    align-items: center;
     width: 80%;
     margin: auto;
     gap: 2rem;
@@ -147,7 +148,7 @@ a{
 #boxsection{
     background-color: var(--Dark-Blue-main-background);
     color: var(--White);
-    padding: 100px;
+    padding: 10px;
 }
 
 .box{
@@ -157,6 +158,7 @@ a{
 }
 .box1{
     width: 90%;
+    margin: 1rem auto;
     background-color: var(--Dark-Blue-testimonials-background);
     padding: 2rem 1.7rem 1rem;
     line-height: 22px;
@@ -216,7 +218,7 @@ a{
     width: 60%;
     text-align: center;
     place-content: center;
-    gap: 100px;
+    gap: 50px;
     margin-left: auto;
     margin-right: auto;
     padding: 40px;
@@ -353,6 +355,10 @@ a{
     display: none;
 }
 
+i{
+    font-size: 22px;
+}
+
 @media screen and (max-width:960px) {
     .iconimg{
         width: 80%;
@@ -368,8 +374,52 @@ a{
     .svgicon{
         padding-left: 40px;
     }
+    .quoteimg{
+        display: none;
+    }
+    .mailsection{
+        flex-direction: column;
+        width: 80%;
+        gap: 30px;
+    }
+    #email{
+        width: 50%;
+    }
+    .accesstoday{
+        width: 80%;
+    }
+    .svg{
+        flex-direction: column;
+        gap: 3rem;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .logofylo{
+        text-align: center;
+        width: 90%;
+        margin-right: auto;
+    }
+    .logofylo img{
+        width: 30%;
+    }
+    .loremimg{
+        font-size: 17px;
+    }
+    .phone img{
+        width: 30px;
+    }
+    .phone{
+        font-size: 16px
+    }
+    .list1{
+        font-size: 16px;
+    }
+    .list2{
+        font-size: 16px;
+    }
 }
-@media screen and (max-width:660px) {
+@media screen and (max-width:575px) {
     .imgbody{
         padding-left: 1px;
     }
@@ -384,7 +434,7 @@ a{
         width: 100%;
     }
     .mailbox{
-        width: 30%;
+        width: 55%;
         margin-left: auto;
         margin-right: auto;
         align-items: center;
@@ -396,26 +446,33 @@ a{
     .footerlist{
         padding-left: 55px;
     }
+    #email{
+        width: 80%;
+    }
     .list2{
         padding-left: 0px;
     }
     .logofylo{
-        width: 500%;
+        width: 70%;
     }
     .svg{
         display: grid;
     }
     .loremimg{
-        font-size: 18px;
+        font-size: 14px;
         padding-bottom: 25px;
         width: 80%; 
         margin-left: 50px;
-        line-height: 30px;
+        line-height: 20px;
+    }
+    .imgsidegeneral{
+        display: grid;
+        grid-template-columns: 1, 1fr;
     }
     .phone{
         padding-bottom: 60px;
         width: 50%;
-        margin-left: -120px;
+        margin-left: -60px;
     }
     .phone img{
         width: 8%;
@@ -423,11 +480,31 @@ a{
     .footerlist{
         padding-bottom: 25px;
         width: 50%;
-        margin-left: -180px;
+        margin-left: -90px;
         display: grid;
     }
 }
-
+@media screen and (max-width:468px){
+    .illustrationimg{
+        width: 70%;
+    }
+    .imgex{
+        width: 70%;
+    }
+    .iconimg{
+        width: 90%;
+    }
+    
+    #boxsection{
+        padding: 40px;
+    }
+    .accesstoday{
+        width: 80%;
+    }
+    .iconimg{
+        grid-template-columns: 1fr;
+    }
+}
 /* Nav styling */
 
 @media screen and (max-width:375px) {
@@ -456,5 +533,7 @@ a{
     .links a{
         color: var(--Dark-Blue-main-background);
     }
-    
+    #email{
+        width: 120%;
+    }
 }
